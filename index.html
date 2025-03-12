@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="simple calculator">
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="calculator">
+        
+        <input type="text" id="display" disabled>
+        
+        <div class="button">
+            
+            <tr>
+                <td>
+                    <button onclick="clearDisplay()" class="btn-oparator" id="clear">C</button>
+                </td>
+                <td>
+                    <button onclick="setOparator('+')" class="btn-oparator">+</button>
+                </td>
+                <td>
+                    <button onclick="setOparator('-')" class="btn-oparator">-</button>
+                </td>
+                <td>
+                    <button onclick="backSpace()" class="btn-oparator" id="back"><</button>
+                </td>
+            </tr>
+            
+            <br>
+            
+            <tr>
+                <td>
+                    <button onclick="appendNumber('7')" class="btn-number">7</button>
+                </td>
+                <td>
+                    <button onclick="appendNumber('8')" class="btn-number">8</button>
+                </td>
+                <td>
+                    <button onclick="appendNumber('9')" class="btn-number">9</button>
+                </td>
+                <td>
+                    <button onclick="setOparator('*')" class="btn-oparator">*</button>
+                </td>
+            </tr>
+            
+            <br>
+            
+            <tr>
+                <td>
+                    <button onclick="appendNumber('4')" class="btn-number">4</button>
+                </td>
+                <td>
+                    <button onclick="appendNumber('5')" class="btn-number">5</button>
+                </td>
+                <td>
+                    <button onclick="appendNumber('6')" class="btn-number">6</button>
+                </td>
+                <td>
+                    <button onclick="setOparator('/')" class="btn-oparator">/</button>
+                </td>
+            </tr>
+            
+            <br>
+            
+            <tr>
+                <td>
+                    <button onclick="appendNumber('1')" class="btn-number">1</button>
+                </td>
+                <td>
+                    <button onclick="appendNumber('2')" class="btn-number">2</button>
+                </td>
+                <td>
+                    <button onclick="appendNumber('3')" class="btn-number">3</button>
+                </td>
+                <td>
+                    <button onclick="setOparator('.')" class="btn-oparator">.</button>
+                </td>
+            </tr>
+            
+            <br>
+            
+            <tr>
+                <td>
+                    <button onclick="setOparator('(')" class="btn-oparator">(</button>
+                </td>
+                <td>
+                    <button onclick="appendNumber('0')" class="btn-number">0</button>
+                </td>
+                <td>
+                    <button onclick="setOparator(')')" class="btn-oparator">)</button>
+                </td>
+                <td>
+                    <button onclick="calculate()" class="btn-oparator">=</button>
+                </td>
+            </tr>
+            
+        </div>
+        
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
